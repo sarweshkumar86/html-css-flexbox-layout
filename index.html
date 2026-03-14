@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    .wrapper
+    {
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(234, 234, 248);
+    }
+
+    .container
+    {
+        width: 80%;
+        height: 90%;
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 4fr 3fr 2fr;
+
+        grid-template-areas:  
+                            "navbar navbar navbar navbar"
+                            "sidebar  main main main"
+                            "sidebar content-1 content-2 content-3"
+                            "sidebar footer footer footer";
+
+
+        row-gap: 15px;
+        column-gap: 15px;
+
+    }
+    .box{
+        text-align: center;
+        color: rgb(255, 252, 71);
+        padding-top: 20px;
+        /* border: 2px solid rgb(70, 16, 70); */
+
+        border-radius: 20px ;
+        box-shadow: 5px 5px 5px rgb(56, 53, 56);
+        text-shadow: 5px 5px 5px rgb(204, 188, 47);
+    }
+    .box-1
+    {
+        background-color: rgb(112, 128, 158);
+        grid-area: navbar;
+    }
+    
+    .box-2
+    {
+        background-color: rgb(94, 103, 231);
+        grid-area: sidebar;
+    }
+    .box-3
+    {
+        background-color: rgb(37, 26, 189);
+        grid-area: main;
+    }
+    .box-4
+    {
+        background-color: rgb(175, 64, 248);
+        grid-area: content-1;
+    }
+    .box-5
+    {
+        background-color: rgb(103, 36, 228);
+        grid-area: content-2;
+    }
+    .box-6
+    {
+        background-color: rgb(227, 65, 233);
+        grid-area: content-3;
+    }
+    .box-7
+    {
+        background-color: rgb(158, 110, 48);
+        grid-area: footer;
+    }
+
+
+
+</style>
+<body>
+
+    <div class="wrapper"> 
+    
+    <div class="container">
+
+        <div class="box box-1"> <h3> NAVBAR </h3> </div>
+        <div class="box box-2"> <H3> SIDEBAR </H3> </div>
+        <div class="box box-3"> <H3> MAIN </H3> </div>
+        <div class="box box-4"> <H3> CONTENT-1 </H3> </div>
+        <div class="box box-5"> <H3> CONTENT-2 </H3> </div>
+        <div class="box box-6"> <H3> CONTENT-3 </H3> </div>
+        <div class="box box-7"> <H3> FOOTER </H3> </div>
+
+    </div>
+
+
+    </div>
+
+</body>
+</html>
